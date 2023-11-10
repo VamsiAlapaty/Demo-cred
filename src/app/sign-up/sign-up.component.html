@@ -1,0 +1,68 @@
+<!-- <div class="row">
+    <div class="column" style="float: left;width: 40%; padding: 2em; padding-right: 0;">
+        <h1>Cred Verification SignUp!!!</h1>
+        <form [formGroup]="singupForm" (ngSubmit)="onSignup()">
+            <label>First Name</label>
+            <input type="text" placeholder="FirstName" formControlName="firstname">
+            <br>
+            <label>Last Name</label>
+            <input type="text" placeholder="LastName" formControlName="lastname">
+            <br>
+            <label>Email:</label>
+            <input type="email" placeholder="youremail@gmail.com" formControlName="email">
+            <br>
+            <label>Password:</label>
+            <input type="password" placeholder="8characters" formControlName="password">
+            <br>
+            <button type="submit" [disabled]="!singupForm.valid">Sign Up</button>
+        </form>
+    </div>
+    <div class="column" style=" float: left;width: 40%; padding: 2em; padding-left: 0;">
+
+        <h1>Cred Verification SignIn!!!</h1>
+        <form [formGroup]="signinForm" (ngSubmit)="onSignin()">
+            <label>Email:</label>
+            <input type="email" placeholder="youremail@gmail.com" formControlName="Email">
+            <br>
+            <label>Password</label>
+            <input type="password" placeholder="password" formControlName="Password">
+            <br>
+            <button primary type="submit">Sign in</button>
+        </form>
+    </div>
+</div> -->
+
+<div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form action="#" [formGroup]="signinForm" (ngSubmit)="onSignin()">
+        <input type="text" placeholder="Enter your email"  formControlName="Email">
+        <input type="password" placeholder="Enter your password" formControlName="Password">
+        <a href="#">Forgot password?</a>
+        <input type="submit" class="button" value="Login">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label  for="check">Signup</label>
+        </span>
+      </div>
+    </div>
+
+
+    <div class="registration form">
+      <header>Signup</header>
+      <form action="#" [formGroup]="singupForm" (ngSubmit)="onSignup()">
+        <input type="text" placeholder="Enter your First Name"  formControlName="firstname">
+        <input type="text" placeholder="Enter your Last Name" formControlName="lastname">
+        <input type="text" placeholder="Enter your email" formControlName="email">
+        <input type="password" placeholder="Create a password"  formControlName="password">
+        <input type="submit" class="button" value="Signup">
+      </form>
+      <div class="signup">
+        <span class="signup">Already have an account?
+         <label for="check">Login</label>
+        </span>
+      </div>
+    </div>
+  </div>
